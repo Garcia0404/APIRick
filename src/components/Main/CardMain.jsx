@@ -4,7 +4,7 @@ export const CardMain = ({name,image,location,episode,type,status}) => {
   
   return (
     <article className='bg-gray-200 rounded-xl shadow-md hover:scale-105 transition-all'>
-      <img className='w-full rounded-t-xl' src={image} alt="img" />
+      <img className='w-full rounded-t-xl' src={image} alt="img" loading='lazy' />
       <div className='p-4 text-xs'>
         <h3 className='mb-3'><strong className='text-[#00205B] text-xl'>{name}</strong></h3>
         <h3><strong>Ubicación: </strong>{location}</h3>
