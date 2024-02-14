@@ -1,16 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-
-import {Navbar, SearchForm} from './components'
+import { HomePage } from './pages'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-    <header>
-      <Navbar/>
-    </header>
-    <main>
-      <SearchForm/>
-    </main>
-  </>
+  <BrowserRouter>
+    <HomePage/>
+  </BrowserRouter>
 )
